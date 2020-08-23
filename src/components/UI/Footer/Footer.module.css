@@ -1,0 +1,18 @@
+/** @format */
+
+footer {
+    margin-top: 100px;
+    padding: 60px 20px 60px 20px;
+  background: #2b57ad;
+}
+
+footer p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #ffffff;
+}

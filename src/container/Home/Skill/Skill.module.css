@@ -1,0 +1,130 @@
+/** @format */
+
+.Skill_Header {
+  margin-bottom: 50px;
+}
+
+.Skill_Header .Rect1,
+.Skill_Header .Rect2 {
+  display: none;
+}
+
+.Skill_Head {
+  margin: auto;
+  max-width: 380px;
+  text-align: start;
+  padding: 50px 18px 0 25px;
+}
+
+.Title h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  /* line-height: 68px; */
+  letter-spacing: 0.07em;
+
+  color: black;
+}
+
+.Title h1 span {
+  color: #2b57ad;
+}
+
+.Title img {
+  width: 35%;
+}
+
+.Sub {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.Sub p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+
+  color: #363636;
+}
+
+.Skill_Bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+}
+
+@media (min-width: 500px) {
+  .Skill_Head {
+    padding: 50px 18px 0 5px;
+  }
+}
+
+@media (min-width: 700px) {
+  .Skill_Bar {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .Skill_Head {
+    max-width: 500px;
+  }
+
+  .Title h1 {
+    font-size: 40px;
+  }
+
+  .Sub p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .Skill_Bar {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .Skill_Header {
+    position: relative;
+  }
+
+  section.Skill {
+    padding-bottom: 50px;
+  }
+
+  .Skill_Head {
+    margin: 0;
+    padding: 50px 18px 0px 50px;
+  }
+
+  .Skill_Bar {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 1150px) {
+  section.Skill {
+    padding: 0px 50px 70px 50px;
+  }
+
+  .Skill_Head {
+    padding: 50px 18px 0px 5%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .Skill_Bar {
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .Skill_Header {
+    margin: auto;
+    width: 90%;
+  }
+}

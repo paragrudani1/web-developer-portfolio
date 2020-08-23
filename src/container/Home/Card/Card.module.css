@@ -1,0 +1,158 @@
+/** @format */
+
+section.Card {
+  padding-bottom: 50px;
+  background: #edf1fd;
+}
+
+.Card_Header {
+  margin: auto;
+  max-width: 380px;
+  text-align: start;
+  padding: 50px 18px 0 25px;
+}
+
+.Card_Header h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  /* line-height: 68px; */
+  letter-spacing: 0.07em;
+
+  color: #2b57ad;
+}
+
+.Card_Header h1 span {
+  color: black;
+}
+
+.Card_Header img {
+  width: 40%;
+}
+
+.Card_SubHeader {
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.Card_SubHeader p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+
+  color: #363636;
+}
+
+@media (min-width: 768px) {
+  .Card_Header {
+    max-width: 500px;
+  }
+
+  .Card_Header h1 {
+    font-size: 40px;
+  }
+
+  .Card_SubHeader p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1100px) {
+  section.Card {
+    padding-bottom: 50px;
+  }
+  .Card_Header {
+    margin: 0;
+    padding: 50px 18px 0px 30px;
+  }
+
+  .Sub_Cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1150px) {
+  section.Card {
+    padding: 0px 50px 70px 50px;
+  }
+
+  .Card_Header {
+    position: relative;
+    padding: 50px 18px 0px 5px;
+  }
+
+  .Card_Header::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background-image: url("../../../assets/vectors/Ellipse\ 1.svg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .Sub_Cards {
+    grid-gap: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .Card_Header {
+    max-width: 600px;
+    margin-bottom: 80px;
+  }
+
+  .Card_Header h1 {
+    font-size: 50px;
+  }
+
+  .Card_SubHeader p {
+    font-size: 22px;
+  }
+
+  .Card_SubHeader {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .Card_Header {
+    padding: 50px 18px 0px 25px;
+  }
+
+  .Card_Header::before {
+    left: 2%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .Card_Header {
+    padding: 50px 18px 0px 35px;
+  }
+
+  .Card_Header::before {
+    left: 4%;
+  }
+}
+
+@media (min-width: 1890px) {
+  section.Card {
+    padding: 0px 50px 90px 50px;
+  }
+
+  .Card_Header {
+    padding: 70px 18px 0px 65px;
+  }
+
+  .Card_Header::before {
+    top: 25%;
+    left: 10%;
+  }
+}

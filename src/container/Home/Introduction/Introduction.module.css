@@ -1,0 +1,221 @@
+/** @format */
+
+header {
+  position: relative;
+  background-color: #edf1fd;
+  padding: 50px 15px 50px 30px;
+}
+
+.Info {
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+}
+
+.Header_Info p {
+  color: #464646;
+  max-width: 400px;
+}
+.Header_Info {
+  position: relative;
+}
+
+.Header_Info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-image: url("../../../assets/vectors/Vector\ 1.svg");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  /* bottom: 0; */
+  left: -20px;
+  height: 100%;
+  z-index: 11;
+}
+
+.Info h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  /* identical to box height */
+  letter-spacing: 0.055em;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Info h1:before {
+  content: "Mark John";
+  position: relative;
+  left: 0;
+  border-bottom: 2px solid black;
+}
+
+.Header_Info {
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.Header_RightArrow {
+  margin-top: 30px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  align-items: center;
+  /* grid-gap: 10px; */
+  /* background-color: black; */
+}
+
+.Header_RightArrow a {
+    color: #2B57AD
+}
+.Header_Img_Section {
+  margin-top: 60px;
+}
+
+.Header_Img_Section > img {
+  width: 100%;
+}
+
+.Header_SocialIcons {
+  margin: auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Header_SocialIcons img {
+  width: 30px;
+}
+
+@media (min-width: 550px) {
+  Header {
+    padding: 50px 15px 50px 50px;
+  }
+
+  .Info h1 {
+    font-size: 40px;
+  }
+
+  .Header_Info p {
+    margin-top: 30px;
+    max-width: 430px;
+    font-size: 18px;
+  }
+
+  .Header_RightArrow {
+    width: 47%;
+  }
+
+  .Header_RightArrow a {
+    font-size: 20px;
+  }
+
+  .Header_Img_Section {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 620px) {
+  .Header_RightArrow {
+    width: 230px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 15px 50px 80px;
+  }
+
+  .Info {
+    margin-top: 15px;
+  }
+
+  .Header_Info p {
+    max-width: 400px;
+  }
+  .Header_RightArrow {
+    position: absolute;
+    bottom: 20px;
+  }
+  .Header_Img_Section {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  header {
+    padding: 50px 25px 100px 100px;
+  }
+
+  .Info {
+    margin-top: 70px;
+  }
+
+  .Header_Info p {
+    max-width: 460px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .Info {
+    margin-top: 90px;
+  }
+
+  .Header_RightArrow {
+    width: 280px;
+  }
+
+  .Header_RightArrow a {
+      font-size: 24px;
+  }
+}
+
+@media (min-width: 1450px) {
+    header {
+        padding: 50px 50px 100px 130px;
+    }
+
+    .Info {
+        margin-top:110px
+    }
+}
+
+@media (min-width: 1750px) {
+    header {
+        padding: 50px 80px 100px 160px;
+    }
+
+    .Header_Name p {
+        font-size: 30px;
+    }
+    .Header_Name h1 {
+        font-size: 70px;
+    }
+
+    .Header_Info p {
+        max-width: 600px;
+        font-size: 25px;
+    }
+
+    .Header_RightArrow {
+        width: 350px;
+    }
+    .Header_RightArrow a {
+        font-size: 30px
+    }
+
+    .Header_RightArrow img {
+        width: 80%;
+    }
+
+    .Header_SocialIcons img {
+        width: 40px
+    }
+
+    .Header_SocialIcons {
+        margin-top: 20px;
+    }
+}

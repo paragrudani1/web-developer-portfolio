@@ -1,0 +1,221 @@
+/** @format */
+
+section.About {
+  padding: 50px 15px 50px 34px;
+}
+
+.Img_Section {
+  max-width: 350px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  border: 15px solid #225d9a;
+  box-sizing: border-box;
+  height: fit-content;
+}
+
+.Img_Section img {
+  width: 90%;
+  display: block;
+}
+
+.Name {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Name h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+
+  /* identical to box height */
+  letter-spacing: 0.07em;
+}
+
+.Name p {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+
+  /* identical to box height */
+  letter-spacing: 0.07em;
+}
+
+.Name span {
+  color: #2b57ad;
+}
+.About_Info {
+  max-width: 350px;
+  margin: auto;
+}
+
+.About_Me {
+  margin-left: 7px;
+  margin-top: 10px;
+}
+
+.About_Me p {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: 0.07em;
+  margin-bottom: 15px;
+  color: #4a4a4a;
+}
+.Btn {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.About_Resume,
+.About_Arrow {
+  background: #2b57ad;
+  padding: 10px;
+}
+
+.About_Resume a {
+  color: white;
+  text-decoration: none;
+}
+
+.About_Resume {
+  display: grid;
+  grid-template-columns: 75% 30%;
+  align-items: center;
+}
+
+@media (min-width: 550px) {
+  section.About {
+    padding: 50px 15px 50px 50px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .Name p {
+    font-size: 26px;
+
+  }
+
+  .About_Info {
+    max-width: 500px;
+  }
+
+  .About_Me p {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .About_Resume,
+.About_Arrow {
+  padding: 18px;
+}
+
+.About_Resume a{
+  font-size: 20px;
+}
+.About_Resume img {
+  width: 22px;
+}
+
+.About_Arrow img {
+  width: 90px;
+  height: 13px;
+}
+}
+
+@media (min-width:1050px) {
+  section.About {
+    padding: 100px 35px 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .About_Section {
+    position: relative;
+  }
+
+  .About_Section::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    background-color: #2B57AD;
+    z-index: -11;
+    opacity: .5;
+  }
+
+  .About_Name {
+    margin-top: 10px;
+  }
+
+  .About_Me p {
+    font-size: 18px;
+  }
+
+  .About_Resume,
+  .About_Arrow {
+    padding: 15px;
+  }
+}
+
+@media (min-width:1150px) {
+  .About_Section::before {
+    left: -10px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .About_Me p {
+    font-size: 20px;
+  }
+
+  .Img_Section {
+    max-width: 390px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .About_Section::before {
+    left: 25px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .About_Section::before {
+    left: 8%;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .About_Section::before {
+    left: 12%;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .About_Section::before {
+    left: 14%;
+    
+  }
+}
+@media (min-width: 1900px) {
+  .About_Section::before {
+    left: 18%;
+    width: 15%;
+  }
+}

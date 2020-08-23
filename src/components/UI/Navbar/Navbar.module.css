@@ -1,0 +1,80 @@
+/** @format */
+
+Nav {
+  background-color: #edf1fd;
+  padding: 22px 28px 25px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Logo {
+  width: 20%;
+}
+
+.Logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.NavItems {
+  width: 80%;
+  justify-content: space-evenly;
+  display: none;
+}
+.burger {
+  padding-top: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 111111111;
+}
+
+/* Burger Menu */
+.burger > div {
+  background-color: black;
+  width: 25px;
+  height: 3px;
+  border-radius: 10px;
+  transition: all 0.3s cubic-bezier(0, 0.68, 0.38, 1.4);
+}
+
+.burger .line1 {
+  width: 80% !important;
+}
+.burger > div:nth-child(3) {
+  width: 120% !important;
+}
+
+.line2,
+.line3 {
+  margin-top: 7px;
+}
+
+.toggles.line1 {
+  width: 120% !important;
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggles.line2 {
+  /* transform: translate(-1px, -9px) rotate(-90deg); */
+  opacity: 0;
+}
+
+.toggles.line3 {
+  transform: translate(1px, -12px) rotate(45deg);
+}
+
+@media (min-width: 768px) {
+  nav {
+    padding: 25px 55px 25px 26px;
+  }
+}
+
+@media (min-width: 1750px) {
+  nav {
+    padding: 40px 150px 25px 26px;
+  }
+}

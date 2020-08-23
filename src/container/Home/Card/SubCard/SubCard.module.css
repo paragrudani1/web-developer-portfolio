@@ -1,0 +1,98 @@
+/** @format */
+
+.SubCard {
+  width: 90%;
+  margin: 20px auto;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  padding: 30px;
+  max-width: 380px;
+}
+
+.Card_Title h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+
+  /* identical to box height */
+  letter-spacing: -0.015em;
+
+  color: #2b57ad;
+}
+
+.Card_Sub p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 145.9%;
+
+  /* or 26px */
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
+@media (min-width: 550px) {
+  .SubCard {
+    margin: 26px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .SubCard {
+    padding: 60px 40px 60px 40px;
+    max-width: 500px;
+  }
+
+  .Card_Img img {
+    width: 40px;
+  }
+
+  .Card_Title {
+    font-size: 29px;
+  }
+
+  .Card_Sub p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .SubCard {
+    margin: auto;
+    padding: 60px 30px 60px 30px;
+  }
+
+  .Card_Sub p {
+      font-size: 17px;
+  }
+}
+
+@media (min-width: 1150px) {
+    .SubCard {
+        width: 100%;
+        padding: 50px 30px 50px 30px;
+        
+    }
+}
+
+@media (min-width: 1600px) {
+    .SubCard {
+        padding: 70px 30px 70px 30px;
+    }
+}
+
+
+@media (min-width: 1700px) {
+    .Card_Sub p {
+        margin-top: 15px;
+        font-size: 21px;
+    }
+}

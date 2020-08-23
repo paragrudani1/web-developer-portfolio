@@ -1,0 +1,24 @@
+/** @format */
+
+.Bar {
+  margin: 20px auto;
+  position: relative;
+  width: 47px;
+  height: 333px;
+  border: 3px solid #2b57ad;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.Percentage {
+  position: absolute;
+  bottom: 0;
+  background-color: #2b57ad;
+  width: 100%;
+  z-index: -1;
+}
+
+.Bar_Img {
+  position: absolute;
+  bottom: 10px;
+}

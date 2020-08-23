@@ -1,0 +1,372 @@
+/** @format */
+.ContactForm_Container {
+  position: relative;
+}
+
+.Story_Header {
+  margin-bottom: 50px;
+}
+
+.Story_Head {
+  margin: auto;
+  max-width: 380px;
+  text-align: start;
+  padding: 50px 18px 0 25px;
+}
+
+.Title h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  /* line-height: 68px; */
+  letter-spacing: 0.07em;
+
+  color: black;
+}
+
+.Title h1 span {
+  color: #2b57ad;
+}
+
+.Title img {
+  width: 35%;
+}
+
+.Sub {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.Sub p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+
+  color: #363636;
+}
+
+.ContactForm {
+  position: relative;
+}
+
+.ContactForm .Bg_Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
+
+.FormText {
+  padding-top: 30px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.025em;
+
+  color: #ffffff;
+}
+
+.Header {
+  text-align: start;
+}
+
+.Header h1 {
+  font-size: 35px;
+  color: #000000;
+}
+
+.Header p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #5c5c5c;
+}
+
+form {
+  font-family: Nunito;
+  padding: 10% 20% 10% 12%;
+  margin: 50px auto;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0px 6px 11px rgba(140, 140, 140, 0.63);
+  border-radius: 14px;
+}
+
+.Input_Section div {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.Input_Section input,
+.Input_Section textarea {
+  border: none;
+  border-bottom: 1px solid black;
+  height: 40px;
+  outline: none;
+  font-family: Nunito;
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.Input_Section input:focus,
+.Input_Section textarea:focus {
+  border-bottom: 1.5px solid blue;
+}
+
+.Input_Section label {
+  font-weight: bold;
+  text-align: start;
+}
+
+.Input_Section label span {
+  color: red;
+}
+
+.Button button {
+  background: #2b57ad;
+  border-radius: 46px;
+  width: 100px;
+  padding: 10px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  border: none;
+  color: #ffffff;
+}
+
+.Contact_Info {
+  width: 100%;
+  padding: 10% 0 10% 15%;
+  background: #f8f9fe;
+  text-align: left;
+}
+
+.Contact_Info li {
+  font-family: Nunito;
+  margin: 10px;
+  list-style-type: none;
+  position: relative;
+  color: #606271;
+}
+.Contact_Info a {
+  color: #606271;
+  text-decoration: none;
+}
+
+.Contact_Info .Number::before,
+.Contact_Info .Email::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  width: 20px;
+  height: 1px;
+  background-color: #606271;
+}
+
+.Contact_Info .Address::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 25%;
+  width: 20px;
+  height: 1px;
+  background-color: #606271;
+}
+
+.Social_Icons {
+  max-width: 200px;
+  margin-left: 10px;
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Social_Icons img {
+  width: 25px;
+}
+@media (min-width: 500px) {
+  .Story_Head {
+    padding: 50px 18px 0 5px;
+  }
+}
+
+@media (min-width: 570px) {
+  form {
+    width: 520px;
+    padding: 68px 120px 120px 68px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Story_Head {
+    max-width: 550px;
+  }
+
+  .Story_Head h1,
+  .Story_Head p {
+    text-align: center;
+  }
+
+  .Story_Head img {
+    margin-left: 20%;
+  }
+
+  .Title h1 {
+    font-size: 40px;
+  }
+
+  .Sub p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .FormText {
+    padding-top: 70px;
+    font-size: x-large;
+  }
+
+  .Contact_Info {
+    padding: 5% 0 5% 15%;
+  }
+
+  .Contact_Info .Number::before,
+  .Contact_Info .Email::before {
+    left: calc(-10% - -25px);
+  }
+
+  .Contact_Info .Address::before {
+    left: calc(-10% - -25px);
+  }
+}
+
+@media (min-width: 1100px) {
+  .Story_Header {
+    position: relative;
+  }
+
+  section.Story {
+    padding-bottom: 50px;
+  }
+
+  .Story_Head {
+    /* margin: 0; */
+    padding: 50px 18px 0px 50px;
+  }
+
+  .Contact_Info .Number::before,
+  .Contact_Info .Email::before {
+    left: calc(-6% - -25px);
+  }
+
+  .Contact_Info .Address::before {
+    left: calc(-6% - -25px);
+  }
+}
+
+@media (min-width: 1150px) {
+  .Story_Head {
+    padding: 50px 18px 0px 5%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ContactForm_Main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .FormText {
+    padding-left: 20%;
+    text-align: left;
+  }
+
+  .FormText h1 {
+    margin-top: 50px;
+    font-size: 70px;
+  }
+
+  .FormText h1 span {
+    display: block;
+  }
+
+  form {
+    width: 570px;
+  }
+
+  .Input_Section textarea {
+    height: 160px;
+  }
+
+  .Contact_Info {
+    margin-top: -185px;
+
+    z-index: -1;
+  }
+
+  .Contact_Info li {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .Story_Header {
+    margin: auto;
+    width: 90%;
+  }
+
+  .FormText h1 {
+    margin-top: 80px;
+  }
+  .Form_Section {
+    margin-top: 50px;
+  }
+
+  form {
+    width: 600px;
+  }
+}
+
+
+
+@media (min-width: 1700px) {
+  .Header h1 {
+    font-size: 45px;
+  }
+
+  .Header p {
+    font-size: 20px;
+  }
+
+  form {
+    padding: 68px 120px 140px 68px;
+  }
+
+  .Input_Section label {
+    font-size: 22px;
+  }
+
+  .Input_Section input,
+  .Input_Section textarea {
+    font-size: 20px;
+  }
+
+  .Button button {
+    width: 130px;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .Contact_Info {
+    margin-top: -100px;
+  }
+}
