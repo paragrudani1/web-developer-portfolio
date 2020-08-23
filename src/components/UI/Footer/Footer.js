@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        Copyright © 2020 kishanrudani.com, All rights Reserved. <br />
-        Created by paragrudani.com
+        Copyright © 2020 <a href="/">kishanrudani.com</a>, All rights Reserved. <br />
+        Created by <a href="https://www.paragrudani.com">paragrudani.com</a>
       </p>
     </footer>
   );
